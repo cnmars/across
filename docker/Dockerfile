@@ -11,6 +11,7 @@ RUN set -ex \
 	&& apk add --no-cache tzdata ca-certificates \
 	&& mkdir -p /var/log/au /usr/share/au \
 	&& wget -O /usr/bin/au  https://xxxxx/x/au
+	&& chmod +x /usr/bin/au
 
 VOLUME /etc/au
 ENV TZ=Asia/Shanghai
